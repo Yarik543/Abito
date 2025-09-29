@@ -1,5 +1,5 @@
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body{
@@ -63,10 +63,24 @@ body{
     display: none;
 }
 
-@media (max-width: 1200px) {
-.container{
-    max-width: 930px;
+.search-box{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(37 , 110, 235);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+.search-box input{
+    flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        max-width: 930px;
+    }
 }
 
 @media (max-width: 991px){
